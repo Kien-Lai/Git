@@ -42,3 +42,12 @@ warning: this command cannot be recovery, you will lost all data you modified
 ```git
 git reset HEAD <file>
 ```
+### Git tag
++ List all tag your repository has
+```git
+git tag
+```
++ add new tag
+```git
+git tag -a v1.0 -m"version 1.0"
+```
