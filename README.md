@@ -39,3 +39,4 @@ git checkout "filename"
 warning: this command cannot be recovery, you will lost all data you modified
 
 +++++++ check recover commit 
+sdakjfllllll
