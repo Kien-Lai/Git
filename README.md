@@ -1,5 +1,5 @@
 # Git cheetsheet
-### Operation:
+> # Operation:
 ![alt text](https://git-scm.com/figures/18333fig0106-tn.png)
 
 ### File Status LifeCycle:
@@ -51,3 +51,18 @@ git tag
 ```git
 git tag -a v1.0 -m"version 1.0"
 ```
+
+### Git log
++ Log all commit
+```git 
+git log
+```
++ Log lass commit
+```git
+git log -1 HEAD
+```
+> # Branch
++ A commit look like image below:
+![alt text](https://git-scm.com/figures/18333fig0301-tn.png) 
++ When you add a commit, commit tree is going to look like this:
+![alt text](https://git-scm.com/figures/18333fig0302-tn.png)
