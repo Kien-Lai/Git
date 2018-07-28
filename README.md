@@ -27,3 +27,15 @@ git diff --cached
 ```
 
 ### Recover
++ To override last commit use: 
+```git
+git commit --amend
+```
+
++ To Recovery a file to last commit use:
+```git
+git checkout "filename"
+```
+warning: this command cannot be recovery, you will lost all data you modified
+
++++++++ check recover commit 
