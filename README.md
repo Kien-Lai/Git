@@ -51,5 +51,3 @@ git tag
 ```git
 git tag -a v1.0 -m"version 1.0"
 ```
-
-test new tag
