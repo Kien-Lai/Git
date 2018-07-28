@@ -25,3 +25,5 @@ Show sự thay đổi giữa file đã được git add . và file đó khi chư
 ```git
 git diff --cached
 ```
+
+### Recover
