@@ -6,7 +6,7 @@
 ![alt text](https://git-scm.com/figures/18333fig0201-tn.png)
 
 ### Show difference Staged and Unstaged:
-``` git diff ```.
+``` git diff ```. (just use for file that isnot committed)
 Giả sử bạn sửa và stage tập tin README lại một lần nữa, sau đó là sửa tập benchmarks.rb mà không stage nó. Nếu bạn chạy lệnh status, bạn sẽ lại nhìn thấy tương tự như sau:
 ```git
 $ git status
@@ -38,5 +38,7 @@ git checkout "filename"
 ```
 warning: this command cannot be recovery, you will lost all data you modified
 
-+++++++ check recover commit 
-sdakjfllllll
++ To unstage a file to last commit use:
+```git
+git reset HEAD <file>
+```
