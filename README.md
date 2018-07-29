@@ -97,3 +97,14 @@ git checkout --track origin/<namebranch>
 git push origin :<branch_name>
 ```
 
++ Rebase
+current commit tree:
+![alt text](https://git-scm.com/figures/18333fig0327-tn.png)
+if you use merge command, commit tree will be:
+![alt text](https://git-scm.com/figures/18333fig0328-tn.png)
+Tuy nhiên, còn có một cách khác: bạn có thể sử dụng bản vá của thay đổi được đưa ra ở C3 và áp dụng nó lên trên C4. Trong Git, đây được gọi là rebasing. Bằng cách sử dụng lệnh rebase, bạn có thể sử dụng tất cả các thay đổi được commit ở một nhánh và "chạy lại" (replay) chúng trên một nhánh khác.
+Nó thực hiện bằng cách đi tới commit cha chung của hai nhánh (nhánh bạn đang làm việc và nhánh bạn đang muốn rebase), tìm sự khác biệt trong mỗi commit của nhánh mà bạn đang làm việc, lưu lại các thay đổi đó vào một tập tin tạm thời, khôi phục lại nhánh hiện tại về cùng một commit với nhánh bạn đang rebase, và cuối cùng áp dụng lần lượt các thay đổi. Hình 3-29 minh họa toàn bộ quá trình này.
+![alt text](https://git-scm.com/figures/18333fig0329-tn.png)
+Đến lúc này, bạn có thể quay lại nhánh master và thực hiện fast-forward merge (xem Hình 3-30).
+![alt text](https://git-scm.com/figures/18333fig0330-tn.png)    
+
