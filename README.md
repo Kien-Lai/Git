@@ -66,3 +66,34 @@ git log -1 HEAD
 ![alt text](https://git-scm.com/figures/18333fig0301-tn.png) 
 + When you add a commit, commit tree is going to look like this:
 ![alt text](https://git-scm.com/figures/18333fig0302-tn.png)
+
++ List all branches 
+```git
+git branch
+```
++ List all branches which havenot merged
+```git 
+git branch --no-merged
+```
+
++ Delete a branch
+```git
+git branch -d <branch_name>
+```
+note: if branch you want to delete isnot an ancestor of your current HEAD, git will warning and if you want to continute, use command : git branch -D <branch_name>
+
++ Create local branch and tracking with origin branch
+```git
+git checkout -b <localbranch> origin/<originbranch>
+```
+
++ Tracking local branch with remote branch
+```git
+git checkout --track origin/<namebranch>
+```
+
++ Delete a remote branch
+```git
+git push origin :<branch_name>
+```
+
