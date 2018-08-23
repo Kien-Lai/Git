@@ -109,7 +109,7 @@ Nó thực hiện bằng cách đi tới commit cha chung của hai nhánh (nhá
 ![alt text](https://git-scm.com/figures/18333fig0330-tn.png)    
 
 + discard all unstaged:
-- git checkout -- ,
+- git checkout -- .
 - For a specific file use:
 git checkout path/to/file/to/revert
 - Another quicker way is:
