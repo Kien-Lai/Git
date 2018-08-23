@@ -108,3 +108,11 @@ Nó thực hiện bằng cách đi tới commit cha chung của hai nhánh (nhá
 Đến lúc này, bạn có thể quay lại nhánh master và thực hiện fast-forward merge (xem Hình 3-30).
 ![alt text](https://git-scm.com/figures/18333fig0330-tn.png)    
 
++ discard all unstaged:
+- git checkout -- ,
+- For a specific file use:
+git checkout path/to/file/to/revert
+- Another quicker way is:
+git stash save --keep-index
+Include --include-untracked if you'd want to be thorough about it.
+
