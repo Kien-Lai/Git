@@ -117,7 +117,7 @@ git stash save --keep-index
 Include --include-untracked if you'd want to be thorough about it.
 
 delete a cached file:
-git remote --cache :file_name;
+git rm --cached :file_name;
 
 git remote set-url origin https://github.com/USERNAME/REPOSITORY.git
 
